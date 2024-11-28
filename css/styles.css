@@ -7,35 +7,89 @@ body {
     padding: 0;
 }
 
-header, footer {
+/* Header */
+header {
     background-color: #333;
     color: #fff;
-    text-align: center;
-    padding: 1rem;
+    padding: 1rem 0;
+}
+
+.header-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 nav ul {
     list-style: none;
     padding: 0;
+    display: flex;
 }
 
 nav ul li {
-    display: inline;
-    margin-right: 10px;
+    margin-left: 20px;
 }
 
 nav ul li a {
     text-decoration: none;
-    color: #333;
+    color: #fff;
+    font-weight: bold;
 }
 
-main section {
-    margin: 15px;
-    padding: 15px;
-    background-color: #fff;
+nav ul li a.active {
+    color: #ffd700; /* 高亮当前激活的链接 */
+}
+
+/* Main */
+main {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+#showcase {
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+    padding: 2rem;
+}
+
+.product, .service {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.product img {
+    width: 500px;
+    height: 500px;
     border-radius: 5px;
 }
 
-footer p {
-    margin: 0;
+.service ul {
+    list-style: none;
+    padding: 0;
+}
+
+.service ul li {
+    background-color: #fff;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
 }

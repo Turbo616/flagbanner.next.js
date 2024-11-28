@@ -8,18 +8,41 @@
 </head>
 <body>
     <header>
-        <h1>欢迎来到我的网站</h1>
+        <div class="header-content">
+            <h1>欢迎来到我的网站</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="active">首页</a></li>
+                    <li><a href="about.html">关于我们</a></li>
+                    <li><a href="#products">产品介绍</a></li>
+                    <li><a href="#services">服务介绍</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
-    <nav>
-        <ul>
-            <li><a href="index.html">首页</a></li>
-            <li><a href="about.html">关于我们</a></li>
-        </ul>
-    </nav>
     <main>
-        <section>
-            <h2>首页内容</h2>
+        <section id="showcase">
+            <h2>探索我们的产品和服务</h2>
             <p>这里是一些关于我们产品的信息。</p>
+        </section>
+        <section id="products">
+            <h2>产品介绍</h2>
+            <p>我们提供高质量的产品。</p>
+            <div class="product">
+                <img src="placeholder-500x500.png" alt="产品占位图" />
+                <p>产品名称 - 产品描述。</p>
+            </div>
+        </section>
+        <section id="services">
+            <h2>服务介绍</h2>
+            <p>我们提供卓越的服务。</p>
+            <div class="service">
+                <ul>
+                    <li>服务1 - 服务描述。</li>
+                    <li>服务2 - 服务描述。</li>
+                    <li>服务3 - 服务描述。</li>
+                </ul>
+            </div>
         </section>
     </main>
     <footer>
